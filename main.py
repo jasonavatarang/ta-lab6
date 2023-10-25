@@ -1,3 +1,11 @@
+def encode(password: str) -> str:
+    return ' '.join(str(int(num) + 3) for num in password)
+
+
+def decode(password: str):
+    pass
+
+
 def main():
     menu_option = None
     password = ""
@@ -7,9 +15,7 @@ def main():
         # Jason edit: encode password (add 3 to each int in string)
         if menu_option == '1':
             password = input("Please enter your password to encode: ")
-            encoded_password = ""
-            for num in password:
-                encoded_password += str(int(num) + 3)
+            encoded_password = encode(password=password)
             print("Your password has been encoded and stored!")
         elif menu_option == '2':
             pass
