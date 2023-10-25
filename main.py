@@ -3,6 +3,7 @@ def encode(password: str) -> str:
 
 
 def decode(password: str):
+    # partner codes this
     pass
 
 
