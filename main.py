@@ -6,7 +6,7 @@ def decode(encoded_password):
   # partner codes this
   encoded_password= list(encoded_password)
   for i in range(0, len(encoder)):
-    # if encoder[i] + 3 is greater than 9
+    # if encoder[i] - 3 is less than 0
     if encoded_password[i] == '0':
       encoded_password[i] = '7'
     elif  encoded_password[i] == '1':
