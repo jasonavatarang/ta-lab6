@@ -32,7 +32,6 @@ def main():
           encoded_password = encode(password=password)
           print("Your password has been encoded and stored!")
       elif menu_option == '2':
-          pass
           print(f"The encoded password is {encoded_password}, and the original password is {password}.")
 
 
