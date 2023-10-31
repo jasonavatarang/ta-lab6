@@ -1,5 +1,5 @@
 def encode(password: str) -> str:
-  return ' '.join(str(int(num) + 3) for num in password)
+  return ''.join(str(int(num) + 3) for num in password)
 
 
 def decode(encoded_password):
